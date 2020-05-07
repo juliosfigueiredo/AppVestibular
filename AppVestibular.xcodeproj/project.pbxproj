@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435EBF6D2464D0B3006913AC /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EBF6C2464D0B3006913AC /* AddAccount.swift */; };
+		435EBF6F2464D2E2006913AC /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EBF6E2464D2E2006913AC /* AccountModel.swift */; };
 		43A14F53246399BC00F8BF40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F52246399BC00F8BF40 /* AppDelegate.swift */; };
 		43A14F55246399BC00F8BF40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F54246399BC00F8BF40 /* SceneDelegate.swift */; };
 		43A14F57246399BC00F8BF40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F56246399BC00F8BF40 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		435EBF622464AA24006913AC /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435EBF652464AA25006913AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435EBF6C2464D0B3006913AC /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		435EBF6E2464D2E2006913AC /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		43A14F4F246399BC00F8BF40 /* AppVestibular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppVestibular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A14F52246399BC00F8BF40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A14F54246399BC00F8BF40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		435EBF632464AA24006913AC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				435EBF6C2464D0B3006913AC /* AddAccount.swift */,
+				435EBF6E2464D2E2006913AC /* AccountModel.swift */,
 				435EBF652464AA25006913AC /* Info.plist */,
 			);
 			path = Domain;
@@ -257,6 +263,7 @@
 				TargetAttributes = {
 					435EBF612464AA24006913AC = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					43A14F4E246399BC00F8BF40 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -331,6 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435EBF6D2464D0B3006913AC /* AddAccount.swift in Sources */,
+				435EBF6F2464D2E2006913AC /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +409,7 @@
 		435EBF672464AA25006913AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -420,6 +430,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -429,6 +440,7 @@
 		435EBF682464AA25006913AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
