@@ -16,6 +16,7 @@
 		43A14F62246399BF00F8BF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A14F60246399BF00F8BF40 /* LaunchScreen.storyboard */; };
 		43A14F6D246399C000F8BF40 /* AppVestibularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F6C246399C000F8BF40 /* AppVestibularTests.swift */; };
 		43A14F78246399C000F8BF40 /* AppVestibularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F77246399C000F8BF40 /* AppVestibularUITests.swift */; };
+		43A14F8724639BA500F8BF40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F8624639BA500F8BF40 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		43A14F73246399C000F8BF40 /* AppVestibularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVestibularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A14F77246399C000F8BF40 /* AppVestibularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVestibularUITests.swift; sourceTree = "<group>"; };
 		43A14F79246399C000F8BF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A14F8624639BA500F8BF40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		43A14F8524639B6700F8BF40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				43A14F8624639BA500F8BF40 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				43A14F5D246399BC00F8BF40 /* AppVestibular.xcdatamodeld in Sources */,
 				43A14F57246399BC00F8BF40 /* ViewController.swift in Sources */,
 				43A14F53246399BC00F8BF40 /* AppDelegate.swift in Sources */,
+				43A14F8724639BA500F8BF40 /* LoginViewController.swift in Sources */,
 				43A14F55246399BC00F8BF40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
