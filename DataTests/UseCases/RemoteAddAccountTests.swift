@@ -16,7 +16,7 @@ class RemoteAddAccountTests: XCTestCase {
         let url = URL(string: "www.globo.com")!
         let (sut, httpClientSpy) = makeSut(url: url)
         sut.add(addContaModel: makeAddAccountModel())
-        XCTAssertEqual(httpClientSpy.url, url)
+        XCTAssertEqual(httpClientSpy.urls, [url])
     }
     // Testar o data
     func test_add_shoud_call_httpClient_with_correct_data() {
@@ -37,11 +37,11 @@ extension RemoteAddAccountTests {
         return AddAccountModel(name: "any_name", email: "any_email@mail.com", password: "any_password", passwordConfirmation: "any_password")
     }
     class HttpClientSpy: HttpPostClient {
-        var url: URL?
+        var urls = [URL]()
         var data: Data?
         
         func post(to url: URL, with data: Data?) {
-            self.url = url
+            self.urls.append(url)
             self.data = data
         }
     }
