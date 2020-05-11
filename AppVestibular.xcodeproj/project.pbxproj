@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431F649B2469D97C00AADDFE /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F649A2469D97C00AADDFE /* SignUpPresenter.swift */; };
+		431F649C2469D9D200AADDFE /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435EBF622464AA24006913AC /* Domain.framework */; };
+		431F649D2469D9D200AADDFE /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 435EBF622464AA24006913AC /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		431F64A32469DA9D00AADDFE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F64A22469DA9D00AADDFE /* AlertView.swift */; };
 		434F82E82467C2E0006592B1 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434F82DF2467C2DF006592B1 /* Presentation.framework */; };
 		434F82ED2467C2E0006592B1 /* SignPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F82EC2467C2E0006592B1 /* SignPresenterTests.swift */; };
 		4351D36B2465A7C100DB9E3E /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D36A2465A7C100DB9E3E /* DomainError.swift */; };
@@ -49,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		431F649E2469D9D200AADDFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A14F47246399BC00F8BF40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435EBF612464AA24006913AC;
+			remoteInfo = Domain;
+		};
 		434F82E92467C2E0006592B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43A14F47246399BC00F8BF40 /* Project object */;
@@ -122,6 +133,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		431F64A02469D9D200AADDFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				431F649D2469D9D200AADDFE /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4351D39B24663A4300DB9E3E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +169,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		431F649A2469D97C00AADDFE /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		431F64A22469DA9D00AADDFE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		434F82DF2467C2DF006592B1 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		434F82E22467C2DF006592B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		434F82E72467C2E0006592B1 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431F649C2469D9D200AADDFE /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +312,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431F64A12469DA9000AADDFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				431F64A22469DA9D00AADDFE /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		431F64A42469DAD600AADDFE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				431F649A2469D97C00AADDFE /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		431F64A52469E15700AADDFE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				434F82EC2467C2E0006592B1 /* SignPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 		434F82E02467C2DF006592B1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				431F64A12469DA9000AADDFE /* Views */,
+				431F64A42469DAD600AADDFE /* Presenters */,
 				434F82E22467C2DF006592B1 /* Info.plist */,
 			);
 			path = Presentation;
@@ -298,7 +349,7 @@
 		434F82EB2467C2E0006592B1 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				434F82EC2467C2E0006592B1 /* SignPresenterTests.swift */,
+				431F64A52469E15700AADDFE /* Presenters */,
 				434F82EE2467C2E0006592B1 /* Info.plist */,
 			);
 			path = PresentationTests;
@@ -585,10 +636,12 @@
 				434F82DB2467C2DF006592B1 /* Sources */,
 				434F82DC2467C2DF006592B1 /* Frameworks */,
 				434F82DD2467C2DF006592B1 /* Resources */,
+				431F64A02469D9D200AADDFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				431F649F2469D9D200AADDFE /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -795,6 +848,7 @@
 				TargetAttributes = {
 					434F82DE2467C2DF006592B1 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					434F82E62467C2E0006592B1 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -952,6 +1006,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431F649B2469D97C00AADDFE /* SignUpPresenter.swift in Sources */,
+				431F64A32469DA9D00AADDFE /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1055,6 +1111,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		431F649F2469D9D200AADDFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435EBF612464AA24006913AC /* Domain */;
+			targetProxy = 431F649E2469D9D200AADDFE /* PBXContainerItemProxy */;
+		};
 		434F82EA2467C2E0006592B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 434F82DE2467C2DF006592B1 /* Presentation */;
@@ -1130,6 +1191,7 @@
 		434F82F02467C2E0006592B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1150,6 +1212,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1159,6 +1222,7 @@
 		434F82F12467C2E0006592B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1188,6 +1252,7 @@
 		434F82F22467C2E0006592B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8LH8763329;
@@ -1208,6 +1273,7 @@
 		434F82F32467C2E0006592B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8LH8763329;
