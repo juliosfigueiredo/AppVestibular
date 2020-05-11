@@ -13,18 +13,26 @@ class SignUpPresenter {
     init(alertView: AlertView) {
         self.alertView = alertView
     }
+    
     func signUp(viewModel: SignUpViewModel) {
-        if viewModel.cpf == nil || viewModel.cpf!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo CPF é obrigatorio"))
-        } else if viewModel.name == nil || viewModel.name!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Nome é obrigatorio"))
-        } else if viewModel.email == nil || viewModel.email!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Email é obrigatorio"))
-        } else if viewModel.password == nil || viewModel.password!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Senha é obrigatorio"))
-        }else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Confirmar Senha é obrigatorio"))
+        if let message = validate(viewModel: viewModel) {
+            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
         }
+    }
+    
+    private func validate(viewModel: SignUpViewModel) -> String? {
+        if viewModel.cpf == nil || viewModel.cpf!.isEmpty {
+            return "O campo CPF é obrigatorio"
+        } else if viewModel.name == nil || viewModel.name!.isEmpty {
+            return "O campo Nome é obrigatorio"
+        } else if viewModel.email == nil || viewModel.email!.isEmpty {
+            return "O campo Email é obrigatorio"
+        } else if viewModel.password == nil || viewModel.password!.isEmpty {
+            return "O campo Senha é obrigatorio"
+        }else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
+            return "O campo Confirmar Senha é obrigatorio"
+        }
+        return nil
     }
 }
 
