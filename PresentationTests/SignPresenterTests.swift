@@ -14,7 +14,9 @@ class SignUpPresenter {
         self.alertView = alertView
     }
     func signUp(viewModel: SignUpViewModel) {
-        if viewModel.cpf == nil || ((viewModel.cpf?.isEmpty) != nil) {
+        if viewModel.cpf == nil || viewModel.cpf!.isEmpty {
+            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo CPF é obrigatorio"))
+        } else if viewModel.name == nil || viewModel.name!.isEmpty {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Nome é obrigatorio"))
         }
     }
@@ -43,6 +45,13 @@ class SignPresenterTests: XCTestCase {
     func test_signUp_should_show_error_message_if_cpf_is_not_provider() {
         let (sut, alertViewSpy) = makeSut()
         let signUpViewModel = SignUpViewModel(name: "any_name", dataNascimento: "any_nascimento", anoConclusaoEnsinoMedio: 2020, email: "any_email", password: "any_password", passwordConfirmation: "any_password")
+        sut.signUp(viewModel: signUpViewModel)
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo CPF é obrigatorio"))
+    }
+    
+    func test_signUp_should_show_error_message_if_name_is_not_provider() {
+        let (sut, alertViewSpy) = makeSut()
+        let signUpViewModel = SignUpViewModel(cpf: "any_cpf", dataNascimento: "any_nascimento", anoConclusaoEnsinoMedio: 2020, email: "any_email", password: "any_password", passwordConfirmation: "any_password")
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Nome é obrigatorio"))
     }
