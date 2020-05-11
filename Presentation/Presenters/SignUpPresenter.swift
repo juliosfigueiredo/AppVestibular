@@ -10,7 +10,10 @@ import Foundation
 
 public final class SignUpPresenter {
     private let alertView: AlertView
-    public init(alertView: AlertView) {
+    private let emailValidator: EmailValidator
+    
+    public init(alertView: AlertView, emailValidator: EmailValidator) {
+        self.emailValidator = emailValidator
         self.alertView = alertView
     }
     
@@ -34,6 +37,7 @@ public final class SignUpPresenter {
         } else if viewModel.password != viewModel.passwordConfirmation {
             return "Falha ao confirmar senha"
         }
+        _ = emailValidator.isValid(email: viewModel.email!)
         return nil
     }
 }
