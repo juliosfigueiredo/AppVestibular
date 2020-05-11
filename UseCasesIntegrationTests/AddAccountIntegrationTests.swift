@@ -16,7 +16,7 @@ class AddAccountIntegrationTests: XCTestCase {
         let alamofireAdapter = AlamofireAdapter()
         let url = URL(string: "www.globo.com")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
-        let addAccountModel = AddAccountModel(name: "Julio Figueiredo", email: "julio@unip.br", password: "secret", passwordConfirmation: "secret")
+        let addAccountModel = AddAccountModel(cpf: "27569820835", name: "Julio Figueiredo", dataNascimento: "14/07/1979", anoConclusaoEnsinoMedio: 2020, email: "julio@unip.br", password: "secret", passwordConfirmation: "secret")
         let exp = expectation(description: "waiting")
         sut.add(addAccountModel: addAccountModel) { result in
             switch result {

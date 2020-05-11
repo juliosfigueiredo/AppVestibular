@@ -15,14 +15,14 @@ class RemoteAddAccountTests: XCTestCase {
     func test_add_shoud_call_httpClient_with_correct_url() {
         let url = makeUrl()
         let (sut, httpClientSpy) = makeSut(url: url)
-        sut.add(addContaModel: makeAddAccountModel()) { _ in }
+        sut.add(addAccountModel: makeAddAccountModel()) { _ in }
         XCTAssertEqual(httpClientSpy.urls, [url])
     }
     // Testar o data
     func test_add_shoud_call_httpClient_with_correct_data() {
         let (sut, httpClientSpy) = makeSut()
         let addAccountModel = makeAddAccountModel()
-        sut.add(addContaModel: addAccountModel) { _ in }
+        sut.add(addAccountModel: addAccountModel) { _ in }
         XCTAssertEqual(httpClientSpy.data, addAccountModel.toData())
     }
     // Testar o erro se client falhar
@@ -52,7 +52,7 @@ class RemoteAddAccountTests: XCTestCase {
         let httpClientSpy = HttpClientSpy()
         var sut: RemoteAddAccount? = RemoteAddAccount(url: makeUrl(), httpClient: httpClientSpy)
         var result: Result<AccountModel, DomainError>?
-        sut?.add(addContaModel: makeAddAccountModel()) { result = $0 }
+        sut?.add(addAccountModel: makeAddAccountModel()) { result = $0 }
         sut = nil
         httpClientSpy.completeWithError(.noConnectivity)
         XCTAssertNil(result)
@@ -70,7 +70,7 @@ extension RemoteAddAccountTests {
     
     func expect(_ sut: RemoteAddAccount, completeWith expectResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
         let exp = expectation(description: "waiting")
-        sut.add(addContaModel: makeAddAccountModel()) { receivedResult in
+        sut.add(addAccountModel: makeAddAccountModel()) { receivedResult in
             switch (expectResult, receivedResult) {
             case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError, file: file, line: line)
             case (.success(let expectedAccount), .success(let receivedAccount)): XCTAssertEqual(expectedAccount, receivedAccount, file: file, line: line)
@@ -83,6 +83,6 @@ extension RemoteAddAccountTests {
     }
     
     func makeAddAccountModel() -> AddAccountModel {
-        return AddAccountModel(name: "any_name", email: "any_email@mail.com", password: "any_password", passwordConfirmation: "any_password")
+        return AddAccountModel(cpf: "any_cpf", name: "any_name", dataNascimento: "any_nascimento", anoConclusaoEnsinoMedio: 2020, email: "any_email", password: "any_password", passwordConfirmation: "any_password")
     }
 }

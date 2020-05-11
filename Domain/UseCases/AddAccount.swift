@@ -13,13 +13,19 @@ public protocol AddAccount {
 }
 
 public struct AddAccountModel: Model {
+    public var cpf: String
     public var name: String
+    public var dataNascimento: String
+    public var anoConclusaoEnsinoMedio: Int64
     public var email: String
     public var password: String
     public var passwordConfirmation: String
     
-    public init(name: String, email: String, password: String, passwordConfirmation: String) {
+    public init(cpf: String, name: String, dataNascimento: String, anoConclusaoEnsinoMedio: Int64, email: String, password: String, passwordConfirmation: String) {
+        self.cpf = cpf
         self.name = name
+        self.dataNascimento = dataNascimento
+        self.anoConclusaoEnsinoMedio = anoConclusaoEnsinoMedio
         self.email = email
         self.password = password
         self.passwordConfirmation = passwordConfirmation

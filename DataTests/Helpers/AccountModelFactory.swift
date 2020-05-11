@@ -10,5 +10,5 @@ import Foundation
 import Domain
 
 func makeAccountModel() -> AccountModel {
-    return AccountModel(name: "any_name", email: "any_email@mail.com", password: "any_password")
+    return AccountModel(cpf: "any_cpf", name: "any_name", dataNascimento: "any_nascimento", anoConclusaoEnsinoMedio: 2020, email: "any_email@mail.com", password: "any_password")
 }
