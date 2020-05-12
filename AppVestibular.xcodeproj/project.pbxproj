@@ -55,6 +55,7 @@
 		43BCFF0A246B03C9000F2D9D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D37224662BC400DB9E3E /* TestExtensions.swift */; };
 		43BCFF0C246B1105000F2D9D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF0B246B1105000F2D9D /* LoadingView.swift */; };
 		43BCFF0F246B6B04000F2D9D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */; };
+		43BCFF11246B6BBB000F2D9D /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		43B6B9642467571F00BB807B /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		43BCFF0B246B1105000F2D9D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -617,6 +619,7 @@
 			children = (
 				431F649A2469D97C00AADDFE /* SignUpPresenter.swift */,
 				43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */,
+				43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -1033,6 +1036,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BCFF11246B6BBB000F2D9D /* SignUpMapper.swift in Sources */,
 				431F649B2469D97C00AADDFE /* SignUpPresenter.swift in Sources */,
 				43BCFF0C246B1105000F2D9D /* LoadingView.swift in Sources */,
 				43BCFF0F246B6B04000F2D9D /* SignUpViewModel.swift in Sources */,
