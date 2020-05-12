@@ -13,11 +13,13 @@ public final class SignUpPresenter {
     private let alertView: AlertView
     private let emailValidator: EmailValidator
     private let addAccount: AddAccount
+    private let loadingView: LoadingView
     
-    public init(alertView: AlertView, emailValidator: EmailValidator, addAccount: AddAccount) {
+    public init(alertView: AlertView, emailValidator: EmailValidator, addAccount: AddAccount, loadingView: LoadingView) {
         self.emailValidator = emailValidator
         self.alertView = alertView
         self.addAccount = addAccount
+        self.loadingView = loadingView
     }
     
     public func signUp(viewModel: SignUpViewModel) {
@@ -25,6 +27,7 @@ public final class SignUpPresenter {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
         } else {
             let addAccountModel = AddAccountModel(cpf: viewModel.cpf!, name: viewModel.name!, dataNascimento: viewModel.dataNascimento!, anoConclusaoEnsinoMedio: viewModel.anoConclusaoEnsinoMedio!, email: viewModel.email!, password: viewModel.password!, passwordConfirmation: viewModel.passwordConfirmation!)
+            loadingView.display(viewModel: LoadingViewModel(isLoading: true))
             addAccount.add(addAccountModel: addAccountModel) { [weak self] result in
                 guard let self = self else {return}
                 switch result {
