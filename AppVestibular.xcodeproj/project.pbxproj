@@ -52,6 +52,7 @@
 		43A14F8724639BA500F8BF40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F8624639BA500F8BF40 /* LoginViewController.swift */; };
 		43B6B9612467546200BB807B /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6B9602467546200BB807B /* AlamofireAdapter.swift */; };
 		43B6B9652467571F00BB807B /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6B9642467571F00BB807B /* UrlProtocolStub.swift */; };
+		43BCFF0A246B03C9000F2D9D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D37224662BC400DB9E3E /* TestExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1029,6 +1030,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431F64A9246A215000AADDFE /* AccountModelFactory.swift in Sources */,
+				43BCFF0A246B03C9000F2D9D /* TestExtensions.swift in Sources */,
 				434F82ED2467C2E0006592B1 /* SignPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
