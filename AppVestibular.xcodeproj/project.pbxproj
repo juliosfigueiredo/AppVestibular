@@ -12,6 +12,7 @@
 		431F649D2469D9D200AADDFE /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 435EBF622464AA24006913AC /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		431F64A32469DA9D00AADDFE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F64A22469DA9D00AADDFE /* AlertView.swift */; };
 		431F64A82469E3DD00AADDFE /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F64A72469E3DD00AADDFE /* EmailValidator.swift */; };
+		431F64A9246A215000AADDFE /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D37924662D0600DB9E3E /* AccountModelFactory.swift */; };
 		434F82E82467C2E0006592B1 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434F82DF2467C2DF006592B1 /* Presentation.framework */; };
 		434F82ED2467C2E0006592B1 /* SignPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F82EC2467C2E0006592B1 /* SignPresenterTests.swift */; };
 		4351D36B2465A7C100DB9E3E /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D36A2465A7C100DB9E3E /* DomainError.swift */; };
@@ -1027,6 +1028,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431F64A9246A215000AADDFE /* AccountModelFactory.swift in Sources */,
 				434F82ED2467C2E0006592B1 /* SignPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

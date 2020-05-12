@@ -12,3 +12,7 @@ import Domain
 func makeAccountModel() -> AccountModel {
     return AccountModel(cpf: "any_cpf", name: "any_name", dataNascimento: "any_nascimento", anoConclusaoEnsinoMedio: 2020, email: "any_email@mail.com", password: "any_password")
 }
+
+func makeAddAccountModel() -> AddAccountModel {
+    return AddAccountModel(cpf: "any_cpf", name: "any_name", dataNascimento: "any_nascimento", anoConclusaoEnsinoMedio: 2020, email: "any_email@mail.com", password: "any_password", passwordConfirmation: "any_password")
+}
