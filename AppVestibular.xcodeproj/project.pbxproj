@@ -52,7 +52,7 @@
 		43A14F5D246399BC00F8BF40 /* AppVestibular.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F5B246399BC00F8BF40 /* AppVestibular.xcdatamodeld */; };
 		43A14F5F246399BF00F8BF40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A14F5E246399BF00F8BF40 /* Assets.xcassets */; };
 		43A14F62246399BF00F8BF40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A14F60246399BF00F8BF40 /* LaunchScreen.storyboard */; };
-		43A14F6D246399C000F8BF40 /* AppVestibularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F6C246399C000F8BF40 /* AppVestibularTests.swift */; };
+		43A14F6D246399C000F8BF40 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F6C246399C000F8BF40 /* SignUpViewControllerTests.swift */; };
 		43A14F78246399C000F8BF40 /* AppVestibularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F77246399C000F8BF40 /* AppVestibularUITests.swift */; };
 		43A14F8724639BA500F8BF40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F8624639BA500F8BF40 /* LoginViewController.swift */; };
 		43B6B9612467546200BB807B /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6B9602467546200BB807B /* AlamofireAdapter.swift */; };
@@ -230,7 +230,7 @@
 		43A14F61246399BF00F8BF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43A14F63246399BF00F8BF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A14F68246399C000F8BF40 /* AppVestibularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVestibularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A14F6C246399C000F8BF40 /* AppVestibularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVestibularTests.swift; sourceTree = "<group>"; };
+		43A14F6C246399C000F8BF40 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		43A14F6E246399C000F8BF40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A14F73246399C000F8BF40 /* AppVestibularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVestibularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A14F77246399C000F8BF40 /* AppVestibularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVestibularUITests.swift; sourceTree = "<group>"; };
@@ -629,7 +629,7 @@
 		43A14F6B246399C000F8BF40 /* AppVestibularTests */ = {
 			isa = PBXGroup;
 			children = (
-				43A14F6C246399C000F8BF40 /* AppVestibularTests.swift */,
+				43A14F6C246399C000F8BF40 /* SignUpViewControllerTests.swift */,
 				43A14F6E246399C000F8BF40 /* Info.plist */,
 			);
 			path = AppVestibularTests;
@@ -1192,7 +1192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43A14F6D246399C000F8BF40 /* AppVestibularTests.swift in Sources */,
+				43A14F6D246399C000F8BF40 /* SignUpViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1308,6 +1308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1339,6 +1340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1362,6 +1364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.PresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1383,6 +1386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.PresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1411,6 +1415,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1442,6 +1447,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1465,6 +1471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1486,6 +1493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.InfraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1506,6 +1514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.UseCasesIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1526,6 +1535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.UseCasesIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1554,6 +1564,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1585,6 +1596,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1615,6 +1627,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1646,6 +1659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1669,6 +1683,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1690,6 +1705,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.DataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
