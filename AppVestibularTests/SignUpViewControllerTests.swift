@@ -7,10 +7,13 @@
 //
 
 import XCTest
+import UIKit
+import Foundation
+
 
 class SignUpViewControllerTests: XCTestCase {
 
-    func test_() {
+    func test_loading_is_hidden_on_start() {
         
     }
 }
