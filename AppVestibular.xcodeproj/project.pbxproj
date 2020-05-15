@@ -47,7 +47,6 @@
 		435EBF972464EDF6006913AC /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435EBF962464EDF6006913AC /* HttpPostClient.swift */; };
 		43A14F53246399BC00F8BF40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F52246399BC00F8BF40 /* AppDelegate.swift */; };
 		43A14F55246399BC00F8BF40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F54246399BC00F8BF40 /* SceneDelegate.swift */; };
-		43A14F57246399BC00F8BF40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F56246399BC00F8BF40 /* ViewController.swift */; };
 		43A14F5A246399BC00F8BF40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A14F58246399BC00F8BF40 /* Main.storyboard */; };
 		43A14F5D246399BC00F8BF40 /* AppVestibular.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43A14F5B246399BC00F8BF40 /* AppVestibular.xcdatamodeld */; };
 		43A14F5F246399BF00F8BF40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A14F5E246399BF00F8BF40 /* Assets.xcassets */; };
@@ -63,7 +62,9 @@
 		43BCFF0C246B1105000F2D9D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF0B246B1105000F2D9D /* LoadingView.swift */; };
 		43BCFF0F246B6B04000F2D9D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */; };
 		43BCFF11246B6BBB000F2D9D /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */; };
-		43F4EABC246CCF4100817AED /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43F4EABB246CCF4100817AED /* Artbrush.ttf */; };
+		43D1F202246DE4B0003A312D /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43D1F201246DE4AF003A312D /* MyriadProCond.ttf */; };
+		43D1F203246E1029003A312D /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43F4EABB246CCF4100817AED /* Artbrush.ttf */; };
+		43D1F205246E109D003A312D /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1F204246E109D003A312D /* AddAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,7 +227,6 @@
 		43A14F4F246399BC00F8BF40 /* AppVestibular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppVestibular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A14F52246399BC00F8BF40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A14F54246399BC00F8BF40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43A14F56246399BC00F8BF40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43A14F59246399BC00F8BF40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43A14F5C246399BC00F8BF40 /* AppVestibular.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppVestibular.xcdatamodel; sourceTree = "<group>"; };
 		43A14F5E246399BF00F8BF40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +245,8 @@
 		43BCFF0B246B1105000F2D9D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
+		43D1F201246DE4AF003A312D /* MyriadProCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProCond.ttf; sourceTree = "<group>"; };
+		43D1F204246E109D003A312D /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		43F4EABB246CCF4100817AED /* Artbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Artbrush.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -622,7 +624,6 @@
 				43A14F8524639B6700F8BF40 /* Controllers */,
 				43A14F52246399BC00F8BF40 /* AppDelegate.swift */,
 				43A14F54246399BC00F8BF40 /* SceneDelegate.swift */,
-				43A14F56246399BC00F8BF40 /* ViewController.swift */,
 				43A14F58246399BC00F8BF40 /* Main.storyboard */,
 				43A14F5E246399BF00F8BF40 /* Assets.xcassets */,
 				43A14F60246399BF00F8BF40 /* LaunchScreen.storyboard */,
@@ -655,6 +656,7 @@
 			children = (
 				43A14F8624639BA500F8BF40 /* LoginViewController.swift */,
 				43B7E387246B8908007C43BE /* SignUpViewController.swift */,
+				43D1F204246E109D003A312D /* AddAccountViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -689,6 +691,7 @@
 		43F4EABA246CCF1700817AED /* Fontes */ = {
 			isa = PBXGroup;
 			children = (
+				43D1F201246DE4AF003A312D /* MyriadProCond.ttf */,
 				43F4EABB246CCF4100817AED /* Artbrush.ttf */,
 			);
 			path = Fontes;
@@ -1079,10 +1082,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D1F202246DE4B0003A312D /* MyriadProCond.ttf in Resources */,
 				43A14F62246399BF00F8BF40 /* LaunchScreen.storyboard in Resources */,
 				43A14F5F246399BF00F8BF40 /* Assets.xcassets in Resources */,
+				43D1F203246E1029003A312D /* Artbrush.ttf in Resources */,
 				43A14F5A246399BC00F8BF40 /* Main.storyboard in Resources */,
-				43F4EABC246CCF4100817AED /* Artbrush.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,8 +1201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B7E388246B8908007C43BE /* SignUpViewController.swift in Sources */,
+				43D1F205246E109D003A312D /* AddAccountViewController.swift in Sources */,
 				43A14F5D246399BC00F8BF40 /* AppVestibular.xcdatamodeld in Sources */,
-				43A14F57246399BC00F8BF40 /* ViewController.swift in Sources */,
 				43A14F53246399BC00F8BF40 /* AppDelegate.swift in Sources */,
 				43A14F8724639BA500F8BF40 /* LoginViewController.swift in Sources */,
 				43A14F55246399BC00F8BF40 /* SceneDelegate.swift in Sources */,
