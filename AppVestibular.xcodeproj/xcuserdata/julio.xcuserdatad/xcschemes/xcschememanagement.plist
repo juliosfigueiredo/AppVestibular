@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Core.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Data.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,6 +47,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>434F82DE2467C2DF006592B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>434F82E62467C2E0006592B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4351D37F2466393800DB9E3E</key>
 		<dict>
 			<key>primary</key>
@@ -68,6 +83,26 @@
 			<true/>
 		</dict>
 		<key>435EBF7C2464D37A006913AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43A14F4E246399BC00F8BF40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43A14F67246399C000F8BF40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43A14F72246399C000F8BF40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43C7C863246E1B53006B0578</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -62,6 +62,7 @@
 		43BCFF0C246B1105000F2D9D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF0B246B1105000F2D9D /* LoadingView.swift */; };
 		43BCFF0F246B6B04000F2D9D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */; };
 		43BCFF11246B6BBB000F2D9D /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */; };
+		43C7C868246E1B53006B0578 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C7C866246E1B53006B0578 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43D1F202246DE4B0003A312D /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43D1F201246DE4AF003A312D /* MyriadProCond.ttf */; };
 		43D1F203246E1029003A312D /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43F4EABB246CCF4100817AED /* Artbrush.ttf */; };
 		43D1F205246E109D003A312D /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1F204246E109D003A312D /* AddAccountViewController.swift */; };
@@ -245,6 +246,9 @@
 		43BCFF0B246B1105000F2D9D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		43BCFF0E246B6B04000F2D9D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		43BCFF10246B6BBB000F2D9D /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
+		43C7C864246E1B53006B0578 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C7C866246E1B53006B0578 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		43C7C867246E1B53006B0578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43D1F201246DE4AF003A312D /* MyriadProCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProCond.ttf; sourceTree = "<group>"; };
 		43D1F204246E109D003A312D /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		43F4EABB246CCF4100817AED /* Artbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Artbrush.ttf; sourceTree = "<group>"; };
@@ -330,6 +334,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		43A14F70246399C000F8BF40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C7C861246E1B53006B0578 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -594,6 +605,7 @@
 				43563EF42467AD2D00078A96 /* UseCasesIntegrationTests */,
 				434F82E02467C2DF006592B1 /* Presentation */,
 				434F82EB2467C2E0006592B1 /* PresentationTests */,
+				43C7C865246E1B53006B0578 /* Core */,
 				43A14F50246399BC00F8BF40 /* Products */,
 				435EBF8C2464D3A7006913AC /* Frameworks */,
 			);
@@ -613,6 +625,7 @@
 				43563EF32467AD2D00078A96 /* UseCasesIntegrationTests.xctest */,
 				434F82DF2467C2DF006592B1 /* Presentation.framework */,
 				434F82E72467C2E0006592B1 /* PresentationTests.xctest */,
+				43C7C864246E1B53006B0578 /* Core.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -688,6 +701,15 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		43C7C865246E1B53006B0578 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				43C7C866246E1B53006B0578 /* Core.h */,
+				43C7C867246E1B53006B0578 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		43F4EABA246CCF1700817AED /* Fontes */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +747,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C7C85F246E1B53006B0578 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C7C868246E1B53006B0578 /* Core.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,6 +969,24 @@
 			productReference = 43A14F73246399C000F8BF40 /* AppVestibularUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		43C7C863246E1B53006B0578 /* Core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C7C86B246E1B53006B0578 /* Build configuration list for PBXNativeTarget "Core" */;
+			buildPhases = (
+				43C7C85F246E1B53006B0578 /* Headers */,
+				43C7C860246E1B53006B0578 /* Sources */,
+				43C7C861246E1B53006B0578 /* Frameworks */,
+				43C7C862246E1B53006B0578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Core;
+			productName = Core;
+			productReference = 43C7C864246E1B53006B0578 /* Core.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -988,6 +1036,9 @@
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = 43A14F4E246399BC00F8BF40;
 					};
+					43C7C863246E1B53006B0578 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 43A14F4A246399BC00F8BF40 /* Build configuration list for PBXProject "AppVestibular" */;
@@ -1017,6 +1068,7 @@
 				43563EF22467AD2D00078A96 /* UseCasesIntegrationTests */,
 				434F82DE2467C2DF006592B1 /* Presentation */,
 				434F82E62467C2E0006592B1 /* PresentationTests */,
+				43C7C863246E1B53006B0578 /* Core */,
 			);
 		};
 /* End PBXProject section */
@@ -1098,6 +1150,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		43A14F71246399C000F8BF40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C7C862246E1B53006B0578 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1223,6 +1282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A14F78246399C000F8BF40 /* AppVestibularUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C7C860246E1B53006B0578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1966,6 +2032,64 @@
 			};
 			name = Release;
 		};
+		43C7C869246E1B53006B0578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8LH8763329;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Core/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.Core;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43C7C86A246E1B53006B0578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8LH8763329;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Core/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.Core;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2073,6 +2197,15 @@
 			buildConfigurations = (
 				43A14F83246399C000F8BF40 /* Debug */,
 				43A14F84246399C000F8BF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C7C86B246E1B53006B0578 /* Build configuration list for PBXNativeTarget "Core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C7C869246E1B53006B0578 /* Debug */,
+				43C7C86A246E1B53006B0578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
